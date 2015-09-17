@@ -49,22 +49,22 @@ The following features are NOT available for testing in this release:
 User Guide to testing this Proof of Concept
 
 ●	Download the .zip file from the Github website: https://github.com/frnic/Elite-Copilot
-○	This will place a .zip file in the location your web browser downloads to.
-○	Unzip the file and you will have a folder called Elite-Copilot-master. 
-○	Inside the folder is a file called EliteCopilot.app - move this folder to your desktop or where you want to save and run it from (the Applications folder will work also)
-○	Double clicking (launching) the app may result in the security in your system telling you that you can not run this program because it is “unsigned”. If this happens you will need to go to your System Preferences and select the Security & Privacy option and at the bottom grant permission to run the application anyway. The source code is available with the application if you are concerned with possible security problems/issues. The final release of the problem will be signed by an Apple Developer (me) and this step will not be necessary. 
+  ○	This will place a .zip file in the location your web browser downloads to.
+  ○	Unzip the file and you will have a folder called Elite-Copilot-master. 
+  ○	Inside the folder is a file called EliteCopilot.app - move this folder to your desktop or where you want to save and run it from (the Applications folder will work also)
+  ○	Double clicking (launching) the app may result in the security in your system telling you that you can not run this program because it is “unsigned”. If this happens you will need to go to your System Preferences and select the Security & Privacy option and at the bottom grant permission to run the application anyway. The source code is available with the application if you are concerned with possible security problems/issues. The final release of the problem will be signed by an Apple Developer (me) and this step will not be necessary. 
 ●	Hello World Test
-○	Launch Elite CoPilot
-○	At the bottom center area of the window that opens, click the + sign to add a new command. The new command will be added to the command list on the top left, and the command details will be displayed on the top right.
-○	In the top right area the command should be filled in with data.
+  ○	Launch Elite CoPilot
+  ○	At the bottom center area of the window that opens, click the + sign to add a new command. The new command will be added to the command list on the top left, and the command details will be displayed on the top right.
+  ○	In the top right area the command should be filled in with data.
 ■	Change the “Key_?” to a key with a known action in your game. For example I use “Key_U” to deploy hard points. (Note do not enter the quote marks, and the Key_ is a necessary prefix for now, it is the Elite:Dangerous convention)
-○	Click Start Button to start speech recognition.
-○	Speak into your microphone the words “Hello World”. 
+  ○	Click Start Button to start speech recognition.
+  ○	Speak into your microphone the words “Hello World”. 
 ■	The system should respond with a voice stating “Yes Commander, Hello World”.
 ■	If you have Elite:Dangerous Running in the background switch to it enter a safe location for testing (training target practice works well) and say “Hello World”. It should deploy or retract the Hard Points and say, “Yes Commander, Hello World”
 ●	Define your own actions, click the + to add another command and edit the settings:
-○	The Key setting is the key to be sent to the game.
-○	The Key Time is how long before the key is released, it works with the Key Pressed and Key Released check boxes. 
+  ○	The Key setting is the key to be sent to the game.
+  ○	The Key Time is how long before the key is released, it works with the Key Pressed and Key Released check boxes. 
 ■	If the Key Released is checked, then the Key Time determines how long the key is held down before being released and is in seconds - 0.5 is ½ second.
 ■	If the Key Released is NOT checked, then if the Key Time is greater than 0.0, the key will be automatically released anyway after the specified amount of time. 1.5 would mean 1 ½ seconds later the key would be automatically released.
 ■	If the Key Released is NOT checked and the Key Time is 0.0, the key will not be released until you execute another command that releases it.
@@ -81,17 +81,17 @@ User Guide to testing this Proof of Concept
 ●	Key Time is 0.0 for no delay releasing, or 1.5 to wait an additional 1.5 seconds before releasing the key.
 ●	Key Released is Checked. 
 ●	Next up, try loading your default control bindings. This file is normally located in your Library folder. Along the bottom of the window is the path for my Custom.binds file. Yours WILL be different, at the least you need to change my name (frank) to your user name. Once the path points to your Custom.bands, click the Import button and it will load your control settings. 
-○	If you don’t have a Custom.bands file, go into the game, into options, into controls, and select the Keyboard and Mouse. Change one setting, for example I change Reset Mouse to F9. 
-○	Then save and exit the game. 
-○	You now have a Custom.binds file based on the standard Keyboard and mouse settings with the only change being for Mouse Reset.
-○	relaunch your game.
+  ○	If you don’t have a Custom.bands file, go into the game, into options, into controls, and select the Keyboard and Mouse. Change one setting, for example I change Reset Mouse to F9. 
+  ○	Then save and exit the game. 
+  ○	You now have a Custom.binds file based on the standard Keyboard and mouse settings with the only change being for Mouse Reset.
+  ○	relaunch your game.
 ●	After loading the control settings file, click Start button and switch into your game. 
-○	Speak the names of the settings - for example DeployHardPoints, or ShipSpotLight, etc. All should work - the computer will say, “Yes Commander, ShipSpotLight”, etc.. and the spot light should toggle on and off each time you speak the command. (Note: a quiet location is preferable for testing, my Air conditioner sounds like it is saying “Pause” to the Mac, and my dogs barking issue interesting commands).
+  ○	Speak the names of the settings - for example DeployHardPoints, or ShipSpotLight, etc. All should work - the computer will say, “Yes Commander, ShipSpotLight”, etc.. and the spot light should toggle on and off each time you speak the command. (Note: a quiet location is preferable for testing, my Air conditioner sounds like it is saying “Pause” to the Mac, and my dogs barking issue interesting commands).
 ○	On the Elite Copilot window below the command list is a pair of buttons labels Active and All, clicking the Active button will display only the controls/commands that have Key assignments, clicking the All button will display all commands in the Custom.binds file, even those without key assignments. 
 ○	You may select a command with no key assignment and assign a key to it to activate it. 
 ○	THIS DOES NOT MAKE THE ASSIGNMENT IN THE GAME, IT ONLY TELLS ELITE COPILOT TO SEND THAT KEY TO THE GAME WHEN YOU SPEAK THAT COMMAND. 
 ○	Either assign a key that will cause something to happen in the game, or go into your control settings in the game and make the change there also. If you make the change in the control settings and save the changes, then the next time you click either, Import, All, or Active buttons, the Custom.binds will be reloaded and reflect the changes you made in game.
 
 ●	Known Bugs
-○	The bug is associated with sorting the command list by clicking the Column header over the Command Name column. This will sort the commands, but it then disables the Import, ALL and Active buttons until you relaunch the program.
-○	A bug exists that causes the Command selected after speaking a command to change randomly. If you are looking at the command list and speaking commands, the list should change to select the command you just spoke, this works “sometimes”, but doesn’t work other times. It seems sorting the list helps it work. But it still fails randomly and selects the wrong Command, even though the correct command is recognized and send to the game.
+  ○	The bug is associated with sorting the command list by clicking the Column header over the Command Name column. This will sort the commands, but it then disables the Import, ALL and Active buttons until you relaunch the program.
+  ○	A bug exists that causes the Command selected after speaking a command to change randomly. If you are looking at the command list and speaking commands, the list should change to select the command you just spoke, this works “sometimes”, but doesn’t work other times. It seems sorting the list helps it work. But it still fails randomly and selects the wrong Command, even though the correct command is recognized and send to the game.
