@@ -14,6 +14,7 @@
 		014327891BA83F5700A2C34E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 014327871BA83F5700A2C34E /* Main.storyboard */; };
 		014327AD1BA8B7FF00A2C34E /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014327AC1BA8B7FF00A2C34E /* Command.swift */; settings = {ASSET_TAGS = (); }; };
 		015EBFA71BAB4E9600AE3A08 /* EliteCopilotforOSXProofofConceptv1.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 015EBFA61BAB4E9600AE3A08 /* EliteCopilotforOSXProofofConceptv1.rtf */; settings = {ASSET_TAGS = (); }; };
+		015EBFA91BAB5DB600AE3A08 /* CC3.0 Licence.txt in Resources */ = {isa = PBXBuildFile; fileRef = 015EBFA81BAB5DB600AE3A08 /* CC3.0 Licence.txt */; settings = {ASSET_TAGS = (); }; };
 		01A3ED2B1BA924F5000ECE7F /* ControlBindings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A3ED2A1BA924F5000ECE7F /* ControlBindings.swift */; settings = {ASSET_TAGS = (); }; };
 		01C3B5EB1BAAF36600645C78 /* KeyCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C3B5EA1BAAF36600645C78 /* KeyCodes.swift */; settings = {ASSET_TAGS = (); }; };
 		01C3B5ED1BAB1D4200645C78 /* EliteCopilot.app in Resources */ = {isa = PBXBuildFile; fileRef = 01C3B5EC1BAB1D4200645C78 /* EliteCopilot.app */; settings = {ASSET_TAGS = (); }; };
@@ -28,6 +29,7 @@
 		0143278A1BA83F5700A2C34E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		014327AC1BA8B7FF00A2C34E /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 		015EBFA61BAB4E9600AE3A08 /* EliteCopilotforOSXProofofConceptv1.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = EliteCopilotforOSXProofofConceptv1.rtf; sourceTree = "<group>"; };
+		015EBFA81BAB5DB600AE3A08 /* CC3.0 Licence.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "CC3.0 Licence.txt"; sourceTree = "<group>"; };
 		01A3ED2A1BA924F5000ECE7F /* ControlBindings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlBindings.swift; sourceTree = "<group>"; };
 		01C051381BA9A76900466AAE /* EliteCopilot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EliteCopilot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01C3B5EA1BAAF36600645C78 /* KeyCodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyCodes.swift; path = ../KeyCodes.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 				01CE1AD71BA928F800A670EB /* Products */,
 				01C051381BA9A76900466AAE /* EliteCopilot.app */,
 				015EBFA61BAB4E9600AE3A08 /* EliteCopilotforOSXProofofConceptv1.rtf */,
+				015EBFA81BAB5DB600AE3A08 /* CC3.0 Licence.txt */,
 				01C3B5EC1BAB1D4200645C78 /* EliteCopilot.app */,
 			);
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				015EBFA91BAB5DB600AE3A08 /* CC3.0 Licence.txt in Resources */,
 				015EBFA71BAB4E9600AE3A08 /* EliteCopilotforOSXProofofConceptv1.rtf in Resources */,
 				014327861BA83F5700A2C34E /* Assets.xcassets in Resources */,
 				014327891BA83F5700A2C34E /* Main.storyboard in Resources */,
