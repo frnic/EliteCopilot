@@ -675,13 +675,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="748" height="384"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUF-Sn-WXH">
+                            <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="22" horizontalPageScroll="10" verticalLineScroll="22" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUF-Sn-WXH">
                                 <rect key="frame" x="20" y="74" width="359" height="290"/>
                                 <clipView key="contentView" ambiguous="YES" id="fcV-4u-eVl">
                                     <rect key="frame" x="1" y="0.0" width="357" height="289"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnReordering="NO" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="R1A-Uk-7Tl" viewBased="YES" id="tcf-jX-y1V">
+                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnReordering="NO" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="20" rowSizeStyle="automatic" headerView="R1A-Uk-7Tl" viewBased="YES" id="tcf-jX-y1V">
                                             <rect key="frame" x="0.0" y="0.0" width="357" height="266"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <animations/>
@@ -777,7 +777,7 @@
                                 </clipView>
                                 <animations/>
                                 <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="0.25" horizontal="YES" id="Fhs-QC-3so">
-                                    <rect key="frame" x="1" y="274" width="495" height="15"/>
+                                    <rect key="frame" x="1" y="8" width="0.0" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <animations/>
                                 </scroller>
