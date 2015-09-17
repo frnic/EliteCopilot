@@ -1,0 +1,276 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		014327801BA83F5700A2C34E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0143277F1BA83F5700A2C34E /* AppDelegate.swift */; };
+		014327821BA83F5700A2C34E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014327811BA83F5700A2C34E /* ViewController.swift */; };
+		014327841BA83F5700A2C34E /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014327831BA83F5700A2C34E /* Document.swift */; };
+		014327861BA83F5700A2C34E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 014327851BA83F5700A2C34E /* Assets.xcassets */; };
+		014327891BA83F5700A2C34E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 014327871BA83F5700A2C34E /* Main.storyboard */; };
+		014327AD1BA8B7FF00A2C34E /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014327AC1BA8B7FF00A2C34E /* Command.swift */; settings = {ASSET_TAGS = (); }; };
+		01A3ED2B1BA924F5000ECE7F /* ControlBindings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A3ED2A1BA924F5000ECE7F /* ControlBindings.swift */; settings = {ASSET_TAGS = (); }; };
+		01A7C8561BAB2FA300DF4C49 /* EliteCopilotforOSXProofofConcept-v1.0.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 01A7C8551BAB2FA300DF4C49 /* EliteCopilotforOSXProofofConcept-v1.0.rtf */; settings = {ASSET_TAGS = (); }; };
+		01C3B5EB1BAAF36600645C78 /* KeyCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C3B5EA1BAAF36600645C78 /* KeyCodes.swift */; settings = {ASSET_TAGS = (); }; };
+		01C3B5ED1BAB1D4200645C78 /* EliteCopilot.app in Resources */ = {isa = PBXBuildFile; fileRef = 01C3B5EC1BAB1D4200645C78 /* EliteCopilot.app */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0143277F1BA83F5700A2C34E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		014327811BA83F5700A2C34E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		014327831BA83F5700A2C34E /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		014327851BA83F5700A2C34E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		014327881BA83F5700A2C34E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0143278A1BA83F5700A2C34E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		014327AC1BA8B7FF00A2C34E /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		01A3ED2A1BA924F5000ECE7F /* ControlBindings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlBindings.swift; sourceTree = "<group>"; };
+		01A7C8551BAB2FA300DF4C49 /* EliteCopilotforOSXProofofConcept-v1.0.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "EliteCopilotforOSXProofofConcept-v1.0.rtf"; sourceTree = "<group>"; };
+		01C051381BA9A76900466AAE /* EliteCopilot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EliteCopilot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01C3B5EA1BAAF36600645C78 /* KeyCodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyCodes.swift; path = ../KeyCodes.swift; sourceTree = "<group>"; };
+		01C3B5EC1BAB1D4200645C78 /* EliteCopilot.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = EliteCopilot.app; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		014327791BA83F5700A2C34E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		014327731BA83F5700A2C34E = {
+			isa = PBXGroup;
+			children = (
+				0143277E1BA83F5700A2C34E /* EliteCopilot */,
+				01A3ED251BA92282000ECE7F /* Support Files */,
+				01CE1AD71BA928F800A670EB /* Products */,
+				01A7C8551BAB2FA300DF4C49 /* EliteCopilotforOSXProofofConcept-v1.0.rtf */,
+				01C051381BA9A76900466AAE /* EliteCopilot.app */,
+				01C3B5EC1BAB1D4200645C78 /* EliteCopilot.app */,
+			);
+			sourceTree = "<group>";
+		};
+		0143277E1BA83F5700A2C34E /* EliteCopilot */ = {
+			isa = PBXGroup;
+			children = (
+				0143277F1BA83F5700A2C34E /* AppDelegate.swift */,
+				014327871BA83F5700A2C34E /* Main.storyboard */,
+				01A3ED271BA922A8000ECE7F /* Controllers */,
+				01A3ED261BA9229F000ECE7F /* Model */,
+			);
+			name = EliteCopilot;
+			path = elitecontrolsparser;
+			sourceTree = "<group>";
+		};
+		01A3ED251BA92282000ECE7F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0143278A1BA83F5700A2C34E /* Info.plist */,
+				014327851BA83F5700A2C34E /* Assets.xcassets */,
+			);
+			name = "Support Files";
+			path = elitecontrolsparser;
+			sourceTree = "<group>";
+		};
+		01A3ED261BA9229F000ECE7F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				01C3B5EA1BAAF36600645C78 /* KeyCodes.swift */,
+				014327AC1BA8B7FF00A2C34E /* Command.swift */,
+				01A3ED2A1BA924F5000ECE7F /* ControlBindings.swift */,
+				014327831BA83F5700A2C34E /* Document.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		01A3ED271BA922A8000ECE7F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				014327811BA83F5700A2C34E /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		01CE1AD71BA928F800A670EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0143277B1BA83F5700A2C34E /* EliteCopilot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 014327A31BA83F5800A2C34E /* Build configuration list for PBXNativeTarget "EliteCopilot" */;
+			buildPhases = (
+				014327781BA83F5700A2C34E /* Sources */,
+				014327791BA83F5700A2C34E /* Frameworks */,
+				0143277A1BA83F5700A2C34E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EliteCopilot;
+			productName = elitecontrolsparser;
+			productReference = 01C051381BA9A76900466AAE /* EliteCopilot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		014327741BA83F5700A2C34E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Frank Nichols";
+				TargetAttributes = {
+					0143277B1BA83F5700A2C34E = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = LKNCM7FVJY;
+					};
+				};
+			};
+			buildConfigurationList = 014327771BA83F5700A2C34E /* Build configuration list for PBXProject "EliteCopilot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 014327731BA83F5700A2C34E;
+			productRefGroup = 014327731BA83F5700A2C34E;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0143277B1BA83F5700A2C34E /* EliteCopilot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0143277A1BA83F5700A2C34E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				014327861BA83F5700A2C34E /* Assets.xcassets in Resources */,
+				014327891BA83F5700A2C34E /* Main.storyboard in Resources */,
+				01A7C8561BAB2FA300DF4C49 /* EliteCopilotforOSXProofofConcept-v1.0.rtf in Resources */,
+				01C3B5ED1BAB1D4200645C78 /* EliteCopilot.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		014327781BA83F5700A2C34E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01C3B5EB1BAAF36600645C78 /* KeyCodes.swift in Sources */,
+				014327821BA83F5700A2C34E /* ViewController.swift in Sources */,
+				014327801BA83F5700A2C34E /* AppDelegate.swift in Sources */,
+				014327841BA83F5700A2C34E /* Document.swift in Sources */,
+				014327AD1BA8B7FF00A2C34E /* Command.swift in Sources */,
+				01A3ED2B1BA924F5000ECE7F /* ControlBindings.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		014327871BA83F5700A2C34E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				014327881BA83F5700A2C34E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		014327A21BA83F5800A2C34E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		014327A51BA83F5800A2C34E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = elitecontrolsparser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dreamersbay.frank.elitecontrolsparser;
+				PRODUCT_NAME = EliteCopilot;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		014327771BA83F5700A2C34E /* Build configuration list for PBXProject "EliteCopilot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				014327A21BA83F5800A2C34E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		014327A31BA83F5800A2C34E /* Build configuration list for PBXNativeTarget "EliteCopilot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				014327A51BA83F5800A2C34E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 014327741BA83F5700A2C34E /* Project object */;
+}
