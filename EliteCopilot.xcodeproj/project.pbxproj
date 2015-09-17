@@ -13,8 +13,8 @@
 		014327861BA83F5700A2C34E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 014327851BA83F5700A2C34E /* Assets.xcassets */; };
 		014327891BA83F5700A2C34E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 014327871BA83F5700A2C34E /* Main.storyboard */; };
 		014327AD1BA8B7FF00A2C34E /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014327AC1BA8B7FF00A2C34E /* Command.swift */; settings = {ASSET_TAGS = (); }; };
+		015EBFA71BAB4E9600AE3A08 /* EliteCopilotforOSXProofofConceptv1.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 015EBFA61BAB4E9600AE3A08 /* EliteCopilotforOSXProofofConceptv1.rtf */; settings = {ASSET_TAGS = (); }; };
 		01A3ED2B1BA924F5000ECE7F /* ControlBindings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A3ED2A1BA924F5000ECE7F /* ControlBindings.swift */; settings = {ASSET_TAGS = (); }; };
-		01A7C8561BAB2FA300DF4C49 /* EliteCopilotforOSXProofofConcept-v1.0.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 01A7C8551BAB2FA300DF4C49 /* EliteCopilotforOSXProofofConcept-v1.0.rtf */; settings = {ASSET_TAGS = (); }; };
 		01C3B5EB1BAAF36600645C78 /* KeyCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C3B5EA1BAAF36600645C78 /* KeyCodes.swift */; settings = {ASSET_TAGS = (); }; };
 		01C3B5ED1BAB1D4200645C78 /* EliteCopilot.app in Resources */ = {isa = PBXBuildFile; fileRef = 01C3B5EC1BAB1D4200645C78 /* EliteCopilot.app */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -27,8 +27,8 @@
 		014327881BA83F5700A2C34E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0143278A1BA83F5700A2C34E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		014327AC1BA8B7FF00A2C34E /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		015EBFA61BAB4E9600AE3A08 /* EliteCopilotforOSXProofofConceptv1.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = EliteCopilotforOSXProofofConceptv1.rtf; sourceTree = "<group>"; };
 		01A3ED2A1BA924F5000ECE7F /* ControlBindings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlBindings.swift; sourceTree = "<group>"; };
-		01A7C8551BAB2FA300DF4C49 /* EliteCopilotforOSXProofofConcept-v1.0.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "EliteCopilotforOSXProofofConcept-v1.0.rtf"; sourceTree = "<group>"; };
 		01C051381BA9A76900466AAE /* EliteCopilot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EliteCopilot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01C3B5EA1BAAF36600645C78 /* KeyCodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyCodes.swift; path = ../KeyCodes.swift; sourceTree = "<group>"; };
 		01C3B5EC1BAB1D4200645C78 /* EliteCopilot.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = EliteCopilot.app; sourceTree = "<group>"; };
@@ -51,8 +51,8 @@
 				0143277E1BA83F5700A2C34E /* EliteCopilot */,
 				01A3ED251BA92282000ECE7F /* Support Files */,
 				01CE1AD71BA928F800A670EB /* Products */,
-				01A7C8551BAB2FA300DF4C49 /* EliteCopilotforOSXProofofConcept-v1.0.rtf */,
 				01C051381BA9A76900466AAE /* EliteCopilot.app */,
+				015EBFA61BAB4E9600AE3A08 /* EliteCopilotforOSXProofofConceptv1.rtf */,
 				01C3B5EC1BAB1D4200645C78 /* EliteCopilot.app */,
 			);
 			sourceTree = "<group>";
@@ -163,9 +163,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				015EBFA71BAB4E9600AE3A08 /* EliteCopilotforOSXProofofConceptv1.rtf in Resources */,
 				014327861BA83F5700A2C34E /* Assets.xcassets in Resources */,
 				014327891BA83F5700A2C34E /* Main.storyboard in Resources */,
-				01A7C8561BAB2FA300DF4C49 /* EliteCopilotforOSXProofofConcept-v1.0.rtf in Resources */,
 				01C3B5ED1BAB1D4200645C78 /* EliteCopilot.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
