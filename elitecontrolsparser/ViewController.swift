@@ -110,6 +110,7 @@ class ViewController: NSViewController, NSSpeechSynthesizerDelegate, NSSpeechRec
     let speechRecognizer = NSSpeechRecognizer()!
     var cmdList = [Command]()
     var keyCode = 0x01
+    let commandPrefix = ""  //"Copilot, "
     
     @IBAction func startListening(sender: AnyObject) {
         
@@ -118,7 +119,7 @@ class ViewController: NSViewController, NSSpeechSynthesizerDelegate, NSSpeechRec
         for aCmd in cmdList {
             if aCmd.key.containsString("Key_") == true
             {
-                voiceCommands.append(aCmd.command)
+                voiceCommands.append("\(commandPrefix)\(aCmd.command)")
             }
         }
         
@@ -138,7 +139,6 @@ class ViewController: NSViewController, NSSpeechSynthesizerDelegate, NSSpeechRec
         print("not listening")
     }
     
-    var foundCmd = Command()
     let src: CGEventSource = CGEventSourceCreate(CGEventSourceStateID.CombinedSessionState)!
     
     func speechRecognizer(sender: NSSpeechRecognizer, didRecognizeCommand command: String) {
@@ -146,34 +146,73 @@ class ViewController: NSViewController, NSSpeechSynthesizerDelegate, NSSpeechRec
         print("Command: \(command)")
         speechSynth.startSpeakingString("Yes commander! \(command)")
         
+        var foundCmd:Command? = nil
         for aCmd in cmdList {
-             if aCmd.command == command {
+             print ("'\(commandPrefix)\(aCmd.command)' vs '\(command)'")
+             if "\(commandPrefix)\(aCmd.command)" == command {
+                print("Match!!!")
                 foundCmd = aCmd
-                cmdArrayController.setSelectedObjects([foundCmd])
+                cmdArrayController.setSelectedObjects([foundCmd!])
                 break
             }
-       }
+        }
+
+        print ("foundCmd: \(foundCmd)")
+
+        if foundCmd == nil {
+            return
+        }
         
-        if let aKeyCode = keyCodes[foundCmd.key] {
+        let keys = foundCmd!.key.componentsSeparatedByCharactersInSet(NSCharacterSet(charactersInString: ", "))
+
+        print ("keys: \(keys.count)")
+        
+        var keyIndex = 0
+        
+        Timer.start(1, repeats:true) {
+            (t: NSTimer) in
             
-            print ("keyCode: \(foundCmd.key) = [\(aKeyCode)]")
-            
-            let pressKey = CGEventCreateKeyboardEvent(src, aKeyCode, true)
-            let unPressKey = CGEventCreateKeyboardEvent(src, aKeyCode, false)
-            
-            if foundCmd.keyDown == true {
-                CGEventPost(CGEventTapLocation.CGHIDEventTap, pressKey)
+            print ("key \(keyIndex): \(keys[keyIndex])")
+            if let aKeyCode = keyCodes[keys[keyIndex++]] {
+                
+                print ("keyCode: \(foundCmd!.key) = [\(aKeyCode)]")
+                
+                let pressKey = CGEventCreateKeyboardEvent(self.src, aKeyCode, true)
+                let unPressKey = CGEventCreateKeyboardEvent(self.src, aKeyCode, false)
+                
+                if foundCmd!.keyDown == true {
+                    CGEventPost(CGEventTapLocation.CGHIDEventTap, pressKey)
+                }
+                
+                if foundCmd!.keyUp == true {
+                    self.delay(foundCmd!.keyPressTime) {
+                        CGEventPost(CGEventTapLocation.CGHIDEventTap, unPressKey)
+                    }
+                } else if foundCmd!.keyPressTime > 0.0 {
+                    self.delay(foundCmd!.keyPressTime) {
+                        CGEventPost(CGEventTapLocation.CGHIDEventTap, unPressKey)
+                    }
+                }
             }
             
-            if foundCmd.keyUp == true {
-                delay(foundCmd.keyPressTime) {
-                    CGEventPost(CGEventTapLocation.CGHIDEventTap, unPressKey)
-                }
-            } else if foundCmd.keyPressTime > 0.0 {
-                delay(foundCmd.keyPressTime) {
-                    CGEventPost(CGEventTapLocation.CGHIDEventTap, unPressKey)
-                }
+            if keyIndex == keys.count {
+                t.invalidate()
             }
         }
+    }
+}
+
+public class Timer {
+    // each instance has it's own handler
+    private var handler: (timer: NSTimer) -> () = { (timer: NSTimer) in }
+    
+    public class func start(duration: NSTimeInterval, repeats: Bool, handler:(timer: NSTimer)->()) {
+        let t = Timer()
+        t.handler = handler
+        NSTimer.scheduledTimerWithTimeInterval(duration, target: t, selector: "processHandler:", userInfo: nil, repeats: repeats)
+    }
+    
+    @objc private func processHandler(timer: NSTimer) {
+        self.handler(timer: timer)
     }
 }
