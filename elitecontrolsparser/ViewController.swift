@@ -181,6 +181,29 @@ class ViewController: NSViewController, NSSpeechSynthesizerDelegate, NSSpeechRec
                 let pressKey = CGEventCreateKeyboardEvent(self.src, aKeyCode, true)
                 let unPressKey = CGEventCreateKeyboardEvent(self.src, aKeyCode, false)
                 
+                // Collate and apply modifier flags
+                var flagValue:UInt64 = 0
+                if foundCmd!.commandKey {
+                    flagValue |= CGEventFlags.MaskCommand.rawValue
+                }
+                
+                if foundCmd!.altKey {
+                    flagValue |= CGEventFlags.MaskAlternate.rawValue
+                }
+                
+                if foundCmd!.ctlKey {
+                    flagValue |= CGEventFlags.MaskControl.rawValue
+                }
+                
+                if foundCmd!.shiftKey {
+                    flagValue |= CGEventFlags.MaskShift.rawValue
+                }
+                
+                let flags = CGEventFlags(rawValue: flagValue)!
+                CGEventSetFlags(pressKey, flags)
+                CGEventSetFlags(unPressKey, flags)
+                
+                // Send sress / release key events
                 if foundCmd!.keyDown == true {
                     CGEventPost(CGEventTapLocation.CGHIDEventTap, pressKey)
                 }
