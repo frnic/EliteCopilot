@@ -111,6 +111,7 @@ class ViewController: NSViewController, NSSpeechSynthesizerDelegate, NSSpeechRec
     var cmdList = [Command]()
     var keyCode = 0x01
     let commandPrefix = ""  //"Copilot, "
+    let interKeyDelay = 0.2
     
     @IBAction func startListening(sender: AnyObject) {
         
@@ -169,7 +170,7 @@ class ViewController: NSViewController, NSSpeechSynthesizerDelegate, NSSpeechRec
         
         var keyIndex = 0
         
-        Timer.start(1, repeats:true) {
+        Timer.start(interKeyDelay, repeats:true) {
             (t: NSTimer) in
             
             print ("key \(keyIndex): \(keys[keyIndex])")
