@@ -22,8 +22,10 @@ class ViewController: NSViewController, NSSpeechSynthesizerDelegate, NSSpeechRec
     
     override func viewDidLoad() {
         
-        let path = "/Users/frank/Library/Application Support/Frontier Developments/Elite Dangerous/Options/Bindings/Custom.binds"
-        
+        var path = NSHomeDirectory()
+
+        path += "/Library/Application Support/Frontier Developments/Elite Dangerous/Options/Bindings/Custom.binds"
+ 
         controlBindingPath.stringValue = path
         
         speechSynth.delegate = self
